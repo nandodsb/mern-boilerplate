@@ -1,0 +1,30 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": {
+    "node": "12.16.3",
+    "npm": "6.14.5"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
