@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-  res.json("Ola")
+  res.json("Hello World")
 })
 
 app.get('/api/user/auth', auth, (req, res) => {
