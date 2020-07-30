@@ -9,7 +9,9 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,6 +27,7 @@
     "mongoose": "^5.9.25"
   },
   "devDependencies": {
+    "http-proxy-middleware": "^1.0.5",
     "nodemon": "^2.0.4"
   }
 }
